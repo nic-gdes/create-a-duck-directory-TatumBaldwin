@@ -60,19 +60,18 @@ body {
     background-color: rgb(66, 64, 64);
 }
 
+
+
 /* HOME PAGE - DUCKS */
-.duck-container {
+
+/* flex positioning */
+.duck-container1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     color: white;
     margin-top: 20rem;
-}
-
-li {
-    color: white ;
-    list-style: none;
 }
 
 .all-ducks {
@@ -82,8 +81,48 @@ li {
     align-content: center;
 }
 
+/* list styles */
+li {
+    color: white ;
+    list-style: none;
+}
+
+/* images */
+
+.duckimg1 {
+    width: 5rem;
+    object-fit: cover;
+}
 
 
+/* PROFILE DUCK PAGE */
+
+.duck-container2 {
+    color: black;
+    background-color: beige;
+
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 20rem;
+    width: 80vw;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+    
+}
+
+/* image */
+.duckimg2 {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+
+
+/* CREATE-DUCK PAGE */
 
 
 /* FOOTER */

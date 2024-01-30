@@ -10,14 +10,17 @@
         <!-- Link to nav.php -->
         <?php include('./assets/components/nav.php'); ?>
 
-        <section class="duck-container">
+        <!-- Duck layout -->
+        <section class="duck-container1">
 
             <h1>My Ducks</h1>
             
              <div class="all-ducks">
+
+             <!-- duck 1 -->
                 <div class="ducks">
 
-                    <img src="" alt="">
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 1">
 
                     <h2>Duck Name</h2>
 
@@ -29,9 +32,10 @@
                     </ol>
                 </div>
 
+                 <!-- duck 2 -->
                 <div class="ducks">
 
-                    <img src="" alt="">
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 2">
 
                     <h2>Duck Name</h2>
 
@@ -43,9 +47,10 @@
                     </ol>
                 </div>
 
+                 <!-- duck 3 -->
                 <div class="ducks">
-                    
-                    <img src="" alt="">
+
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 3">
 
                     <h2>Duck Name</h2>
 
