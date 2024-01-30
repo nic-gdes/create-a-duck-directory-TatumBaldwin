@@ -1,0 +1,125 @@
+/* GENERAL STYLING */
+a {
+    text-decoration: none;
+
+}
+
+body {
+    background-color: black;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+
+
+/* NAVIGATION */
+
+/* background color */
+ nav {
+    background-color: beige;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+ }
+
+/* logo */
+.logo-contain {
+    width: 130px;
+}
+
+.logo {
+    width: 100%;
+}
+
+/* center the nav */
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* text and fonts */
+.nav-link {
+    text-decoration: none;
+    color:  whitesmoke;
+    font-family:Helvetica, Arial, sans-serif;
+    background-color: black;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+/* link affects */
+.nav-link:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+.nav-link:active {
+    background-color: rgb(66, 64, 64);
+}
+
+/* HOME PAGE - DUCKS */
+.duck-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 20rem;
+}
+
+li {
+    color: white ;
+    list-style: none;
+}
+
+.all-ducks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+
+/* FOOTER */
+
+/* background color */
+footer {
+    background-color: beige;
+    padding-top: 1rem;
+    margin-top: 100rem;
+}
+
+
+/* center the footer */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* text and fonts */
+.footer-link {
+    text-decoration: none;
+    color: black;
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+/* link affects */
+.footer-link:hover {
+    color: rgb(65, 63, 63);
+}
+
+.footer-link:active {
+    color: rgb(117, 115, 115);
+}
+
+.small {
+    padding: 1rem;
+}

@@ -1,50 +1,66 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Link to head.php -->
+        <?php include('./assets/components/head.php'); ?>
 
-/******** CONNECT TO A DATABASE *********/
-// use mysqli_connect to connect to database. There are four arguments: host, username, password, and database name, in that order.
+    </head>
 
-// $conn = mysqli_connect("db:3306", "db", "db", "db" );
+    <body>
+        <!-- Link to nav.php -->
+        <?php include('./assets/components/nav.php'); ?>
 
-// check if there's no connection and give an error if so
+        <section class="duck-container">
 
-// if (mysqli_connect_errno()) {
-//     echo "Connection error: " . mysqli_connect_error();
-//     exit();
-// }
+            <h1>My Ducks</h1>
+            
+             <div class="all-ducks">
+                <div class="ducks">
 
-/******** EXECUTE QUERIES ON THE DATABASE TO RETRIEVE DATA *********/
-// write query for all records
+                    <img src="" alt="">
 
-// $sql = "SELECT * FROM example";
+                    <h2>Duck Name</h2>
 
-// make query and get result
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
 
-// $result = mysqli_query($conn, $sql);
+                <div class="ducks">
 
-// fetch the resulting rows as an array
+                    <img src="" alt="">
 
-// $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
+                    <h2>Duck Name</h2>
 
-/******** WRAP UP DATABASE CONNECTION *********/
-// free the result from memory
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
 
-// mysqli_free_result($result);
+                <div class="ducks">
+                    
+                    <img src="" alt="">
 
-// close the connection to the database
+                    <h2>Duck Name</h2>
 
-// mysqli_close($conn);
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
 
+        <!-- Link to footer.php -->
+        <?php include('./assets/components/footer.php'); ?>
 
-// print_r($data);  ----- tests that all data is there 
-
-// ?>
-
-<!-- <h1>Hello there</h1> -->
-
-<!-- <ul> -->
-    <!-- <?php foreach($data as $name) : ?> -->
-        <!-- <li> -->
-            <?php echo $name['first_name']; ?>
-        <!-- </li> -->
-        <?php endforeach ?>
-</ul>
+    </body>
+</html>
