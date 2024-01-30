@@ -120,6 +120,10 @@ li {
     object-fit: cover;
 }
 
+.bolded {
+    font-style: bold;
+}
+
 
 
 /* CREATE-DUCK PAGE */
