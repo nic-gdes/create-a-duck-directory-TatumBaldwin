@@ -15,15 +15,15 @@
 
         <section class="duck-container3">
             <h2>Create a Duck</h2>
-            <form action="">
+            <form action="create-duck.php" method="POST">
                 <div class="flex-col">
                     <label for="name">Name</label>
-                    <input type="text" name="name">
+                    <input id="name" for="name" type="text" name="name">
                 </div>
 
                 <div class="flex-col">
                     <label for="food">Favorite Food (ex. Pasta, Beans, Pork)</label>
-                    <input type="text" name="food">
+                    <input type="text" name="food" for="food">
                 </div>
 
                 <div class="flex-col">
@@ -35,12 +35,25 @@
 
                 <div class="flex-col">
                     <label for="biography">Duck Biography</label>
-                    <input type="message" name="biography">
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
-                <button type="submit" name="submit" value="submit">
-                    Submit
-                </button>
+                <button type="submit" name="submit" value="submit">Submit</button>
             </form>
+
+            <div class="results">
+                <?php
+                    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                        $name = htmlspecialchars($_POST['name']);
+                        $message = htmlspecialchars($_POST['message']);
+                        $file = htmlspecialchars($_POST['file']);
+                        $food = htmlspecialchars($_POST['food']);
+
+                        echo $name . ", " . $food . ", " . $file . ", " . $message;
+                    }
+
+                ?>
+            </div>
+            
         </section>
 
 

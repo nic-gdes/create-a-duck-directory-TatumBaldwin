@@ -135,7 +135,7 @@ li {
     padding: 1rem;
     margin: 0 auto;
     margin-top: 20rem;
-    width: 80vw;
+    width: 45rem;
 
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -186,6 +186,18 @@ input {
     margin: 0 auto;
 }
 
+textarea {
+    margin: 0 auto;
+    width: 20rem;
+
+}
+
+.results {
+    color: black;
+    text-align: center;
+    margin-top: 5rem;
+}
+
 /* FOOTER */
 
 /* background color */
@@ -223,3 +235,27 @@ footer {
 .small {
     padding: 1rem;
 }
+
+@media screen and (max-width: 868px) {
+
+   .all-ducks {
+    flex-direction: column;
+    margin: 0 auto;
+   }
+
+   .duck-container2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20rem;
+    text-align: center;
+    width: 70vw;
+    height: 40rem;
+   }
+
+   .duckimg2 {
+    width: 100%;
+   }
+
+  }
