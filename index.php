@@ -10,10 +10,17 @@
         <!-- Link to nav.php -->
         <?php include('./assets/components/nav.php'); ?>
 
+        <!-- Welcome Section -->
+
+        <section>
+            <h1>Welcome</h1>
+            <p class="welcome"> Design your own ducks using our personalized form. Go to profile to start your ducktastic journey!</p>
+        </section>
+
         <!-- Duck layout -->
         <section class="duck-container1">
 
-            <h1>My Ducks</h1>
+            <h2>My Ducks</h2>
             
              <div class="all-ducks">
 

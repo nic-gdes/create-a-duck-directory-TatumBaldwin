@@ -16,6 +16,19 @@ h2 {
     height: 30px;
 }
 
+h1 {
+    color: beige;
+    margin-top: 15rem;
+    text-align: center;
+}
+
+.welcome {
+    color: beige;
+    text-align: center;
+    width: 25rem;
+    margin: 0 auto;
+}
+
 
 /* NAVIGATION */
 
@@ -79,7 +92,7 @@ h2 {
 
     width: 80vw;
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 5rem;
     gap: 1rem;
 
     color: black;
@@ -134,7 +147,7 @@ li {
 
     padding: 1rem;
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 15rem;
     width: 45rem;
 
     display: grid;
@@ -165,7 +178,7 @@ li {
 
     padding: 1rem;
     margin: 0 auto;
-    margin-top: 20rem;
+    margin-top: 15rem;
     text-align: center;
     width: 80vw;
 
@@ -204,7 +217,7 @@ textarea {
 footer {
     background-color: beige;
     padding-top: 1rem;
-    margin-top: 100rem;
+    margin-top: 10rem;
 }
 
 
