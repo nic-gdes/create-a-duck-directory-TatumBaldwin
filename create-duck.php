@@ -13,14 +13,30 @@
 
         <!-- Duck layout -->
 
-        <section>
+        <section class="duck-container3">
             <h2>Create a Duck</h2>
             <form action="">
-                <label for="name">Name</label>
-                <input type="text" name="name">
-                <input type="text" name="name">
-                <input type="file" name="file">
-                <input type="text" name="name">
+                <div class="flex-col">
+                    <label for="name">Name</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="flex-col">
+                    <label for="food">Favorite Food (ex. Pasta, Beans, Pork)</label>
+                    <input type="text" name="food">
+                </div>
+
+                <div class="flex-col">
+                    <label for="profile">Profile Image</label>
+                    <div>
+                     <input type="file" name="file">
+                    </div>
+                </div>
+
+                <div class="flex-col">
+                    <label for="biography">Duck Biography</label>
+                    <input type="message" name="biography">
+                </div>
                 <button type="submit" name="submit" value="submit">
                     Submit
                 </button>

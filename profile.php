@@ -14,7 +14,7 @@
         <section class="duck-container2">
             <img src="./assets/images/coming-soon.png" alt="" class="duckimg2">
             <div>
-                <h2>Duck Name</h2>
+                <h2 class="duck-name">Duck Name</h2>
                 <p><span class="bolded">Favorite Foods:</span>item, item, item</p>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias numquam, 

@@ -9,6 +9,12 @@ body {
     font-family:Helvetica, Arial, sans-serif;
 }
 
+h2 {
+    margin: 0;
+    margin: 1rem;
+    padding: 0;
+    height: 30px;
+}
 
 
 /* NAVIGATION */
@@ -70,8 +76,14 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: white;
+
+    width: 80vw;
+    margin: 0 auto;
     margin-top: 20rem;
+    gap: 1rem;
+
+    color: black;
+    background-color: beige;
 }
 
 .all-ducks {
@@ -81,21 +93,40 @@ body {
     align-content: center;
 }
 
+.ducks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
 /* list styles */
+ol {
+    margin: 0;
+    padding: 0;
+}
+
 li {
-    color: white ;
     list-style: none;
+    margin: 0;
+    margin: 0.1rem;
+    padding: 0;
 }
 
 /* images */
 
 .duckimg1 {
-    width: 5rem;
+    max-width: 10rem;
     object-fit: cover;
 }
 
 
 /* PROFILE DUCK PAGE */
+
+.duck-name {
+    margin: 0;
+    margin-top: 2rem;
+}
 
 .duck-container2 {
     color: black;
@@ -128,6 +159,32 @@ li {
 
 /* CREATE-DUCK PAGE */
 
+.duck-container3 {
+    color: black;
+    background-color: beige;
+
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 20rem;
+    text-align: center;
+    width: 80vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.flex-col {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+    flex-direction: column;
+}
+
+input {
+    width: 20rem;
+    margin: 0 auto;
+}
 
 /* FOOTER */
 
