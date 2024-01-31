@@ -13,16 +13,13 @@
         <!-- Welcome Section -->
 
         <section>
-            <h1>Welcome</h1>
+            <h1>Welcome to Your Ducks</h1>
             <p class="welcome"> Design your own ducks using our personalized form. Go to profile to start your ducktastic journey!</p>
         </section>
 
         <!-- Duck layout -->
         <section class="duck-container1">
 
-            <h2>My Ducks</h2>
-            
-             <div class="all-ducks">
 
              <!-- duck 1 -->
                 <div class="ducks">
@@ -68,7 +65,77 @@
                         <li>item</li>
                     </ol>
                 </div>
-            </div>
+
+                <div class="ducks">
+
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 3">
+
+                    <h2>Duck Name</h2>
+
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
+
+                <div class="ducks">
+
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 3">
+
+                    <h2>Duck Name</h2>
+
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
+
+                <div class="ducks">
+
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 3">
+
+                    <h2>Duck Name</h2>
+
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
+
+                <div class="ducks">
+
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 3">
+
+                    <h2>Duck Name</h2>
+
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
+
+                <div class="ducks">
+
+                    <img class="duckimg1" src="./assets/images/coming-soon.png" alt="Duck 3">
+
+                    <h2>Duck Name</h2>
+
+                    <ol class="foods">
+                        <lh>Favorite Foods</lh>
+                        <li>item</li>
+                        <li>item</li>
+                        <li>item</li>
+                    </ol>
+                </div>
+                
         </section>
 
         <!-- Link to footer.php -->
