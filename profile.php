@@ -2,13 +2,13 @@
 <html lang="en">
     <head>
         <!-- Link to head.php -->
-        <?php include('./assets/components/head.php'); ?>
+        <?php include('./components/head.php'); ?>
 
     </head>
 
     <body>
         <!-- Link to nav.php -->
-        <?php include('./assets/components/nav.php'); ?>
+        <?php include('./components/nav.php'); ?>
 
         <!-- Duck 1 -->
         <section class="duck-container2">
@@ -44,7 +44,7 @@
 
 
         <!-- Link to footer.php -->
-        <?php include('./assets/components/footer.php'); ?>
+        <?php include('./components/footer.php'); ?>
 
     </body>
 </html>
