@@ -10,7 +10,7 @@
         <!-- Link to nav.php -->
         <?php include('./assets/components/nav.php'); ?>
 
-        <!-- Duck layout -->
+        <!-- Duck 1 -->
         <section class="duck-container2">
             <img src="./assets/images/coming-soon.png" alt="" class="duckimg2">
             <div>
@@ -25,6 +25,8 @@
             </div>
         </section>
 
+
+        <!-- duck 2 -->
         <section class="duck-container2">
             <img src="./assets/images/coming-soon.png" alt="" class="duckimg2">
             <div>
