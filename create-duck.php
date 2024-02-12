@@ -8,7 +8,7 @@
 
     <body>
         <!-- Link to nav.php -->
-        <?php include('./components/nav.php'); ?>
+        <!-- <?php include('./components/nav.php'); ?> -->
 
         <div class="results">
                 
@@ -16,9 +16,10 @@
         
                 <?php 
                 
+                
                     //check for POST
                     if(isset($_POST['submit'])) {
-        
+
                         //Create an error array
                         $errors = array(
                             "name" => "",
@@ -30,6 +31,7 @@
                         $food = htmlspecialchars($_POST["food"]);
                         $message = htmlspecialchars($_POST["message"]);
         
+                        echo $name . $food . $message;
         
                         // check if name exists
                         if(empty($name)) {
@@ -58,17 +60,31 @@
                         }
         
                         //check if bio is empty
-                        if(empty($bio)) {
+                        if(empty($message)) {
                             // error if so
-                            $errors["bio"] = "A Bio is required.";
+                            $errors["message"] = "A Bio is required.";
         
                         }
         
                         if(!array_filter($errors)) {
-                            // if everything is good
-                            header("Location: ./index.php");
+                            // if everything is good and form is valid
+
+                            //Connect to database
+                            require('./config/db.php');
+
+                            //build SQL query
+                            $sql = "INSERT INTO ducks (name, favorite_foods, bio) VALUES ('$name', '$food', '$message')";
+
+                            // echo $sql;
+                            // //Execute query in SQL
+                            mysqli_query($conn,$sql);
+                            // //load hompage
+                            echo "Query is successful. Added " . $name . " to database.";
+
+                            header("location:./index.php");
                         } else {
                             // if not, run error
+                            print_r($errors);
         
                         }
                     }
@@ -85,7 +101,7 @@
                 
                 
                 ?>
-                    </div>
+        </div>
 
         <!-- Duck layout -->
 
@@ -110,7 +126,7 @@
                         } 
                         
                         ?>
-                    <input type="text" name="food" for="food" placeholder="beans, pasta, grapes" required>
+                    <input type="text" name="food" placeholder="beans, pasta, grapes" id="food" required>
                 </div>
 
                 <div class="flex-col">
@@ -126,9 +142,8 @@
                         echo "<div class='error'>" . $errors["message"] . "</div>";
                         } 
                         
-                        ?>
-                    <textarea name="message" id="message" cols="30" rows="10" required placeholder="Talk about your duck...">
-                    </textarea>
+                    ?>
+                    <textarea name="message" id="message" cols="30" rows="10" required placeholder="Talk about your duck..."></textarea>
                 </div>
                 <button type="submit" name="submit" value="submit">Submit</button>
             </form>
