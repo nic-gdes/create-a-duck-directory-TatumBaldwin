@@ -137,7 +137,7 @@
 
     <body>
         <!-- Link to nav.php -->
-        <!-- <?php include('./components/nav.php'); ?> -->
+        <?php include('./components/nav.php'); ?>
 
         <div class="results">
                 

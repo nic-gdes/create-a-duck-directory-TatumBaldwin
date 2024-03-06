@@ -5,7 +5,7 @@
 
         // $conn = mysqli_connect("hostname", "username", "password", "database name");
 
-        $conn = mysqli_connect("127.0.0.1:3308", "2024tbaldwin", "tbaldwin447", "welearnd_gdes261_2024_tbaldwin");
+        $conn = mysqli_connect("db:3306", "root", "root", "db");
 
 
         //Verify connection with mysqli_connect_errno and mysqli_connect_error
