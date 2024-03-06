@@ -25,6 +25,7 @@ if (isset($_GET['id'])) {
     //check if duck is empty = if it has content, mark duck_is_live as true
     if(isset($duck["id"])) {
         $duck_is_live = true;
+        
     }
 }
 
