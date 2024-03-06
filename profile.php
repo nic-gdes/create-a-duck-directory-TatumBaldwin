@@ -22,6 +22,10 @@ if (isset($_GET['id'])) {
     mysqli_free_result($result);
     mysqli_close($conn);
     
+    //check if duck is empty = if it has content, mark duck_is_live as true
+    if(isset($duck["id"])) {
+        $duck_is_live = true;
+    }
 }
 
 
@@ -40,25 +44,34 @@ if (isset($_GET['id'])) {
 
     <body>
         <!-- Link to nav.php -->
-        <!-- <?php include('./components/nav.php'); ?> -->
+         <?php include('./components/nav.php'); ?> 
 
-        <!-- Duck 1 -->
-        <section class="duck-container2">
-            <img src="<?php echo $duck["img_src"]; ?>" alt="" class="duckimg2">
-            <div>
-                <h2 class="duck-name"><?php echo $duck["name"] ?></h2>
-                <p><span class="bolded">Favorite Foods:</span><?php echo $duck["favorite_foods"] ?></p>
-                <p><?php echo $duck["bio"] ?></p>
-            </div>
-        </section>
+        <main>
+            <?php if ($duck_is_live) : ?>
+                <section class="duck-container2 profile">
+                    <img src="<?php echo $duck["img_src"]; ?>" alt="" class="duckimg2">
+                    <div>
+                        <h2 class="duck-name"><?php echo $duck["name"] ?></h2>
+                        <p><span class="bolded">Favorite Foods:</span><?php echo $duck["favorite_foods"] ?></p>
+                        <p><?php echo $duck["bio"] ?></p>
+                    </div>
+
+                </section>
+                <?php else : ?>
+                    <section class="no-duck">
+                        <h1>Sorry, this duck does not exist</h1>
+                    </section>
+                <?php endif ?>
+
+        
 
 
-    
+        
 
 
 
-        <!-- Link to footer.php -->
-        <?php include('./components/footer.php'); ?>
-
+            <!-- Link to footer.php -->
+            <?php include('./components/footer.php'); ?>
+        </main>
     </body>
 </html>
