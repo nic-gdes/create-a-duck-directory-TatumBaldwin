@@ -1,3 +1,35 @@
+<!-- delete button -->
+<?php
+
+//connect to db - grabs info from db.php
+require('./config/db.php');
+
+//check if we have post data
+
+if (isset($_POST['delete'])) {
+    // get id
+    $id_to_delete = (int)$_POST['id_to_delete'];
+
+    //delete from database
+    $delete_sql = "DELETE FROM ducks WHERE id='$id_to_delete'";
+
+    //state weather the delete was successful or not
+    if(mysqli_query($conn, $delete_sql)) {
+        echo "Duck Deleted Successfully";
+    }else {
+        echo "Error deleting Duck: " . mysqli_error($conn);
+    }
+}
+
+$sql = "SELECT * from ducks";
+$result = mysqli_query($conn, $sql);
+
+
+?>
+
+
+
+
 <?php
 
 $duck_is_live = false;
@@ -8,8 +40,6 @@ if (isset($_GET['id'])) {
     $id = htmlspecialchars($_GET['id']);
 
 // get duck info from the database
-    //connect to db - grabs info from db.php
-    require('./config/db.php');
 
     //create query to select the intended duck from the database
     $sql = "SELECT id, name, favorite_foods, bio, img_src FROM ducks WHERE id=$id";
@@ -29,15 +59,6 @@ if (isset($_GET['id'])) {
     }
 
 }
-
-// create delete button
-
-//conect the connection page
-
-require ('connection.php');
-
-
-//Check if POST request for delete
 ?>
 
 
@@ -61,6 +82,14 @@ require ('connection.php');
                         <h2 class="duck-name"><?php echo $duck["name"] ?></h2>
                         <p><span class="bolded">Favorite Foods:</span><?php echo $duck["favorite_foods"] ?></p>
                         <p><?php echo $duck["bio"] ?></p>
+
+                        <form action="./profile.php" method="POST">
+
+                            <input type="hidden" name="id_to_delete" value="<?php echo $duck['id']; ?>">
+
+                            <input type="submit" name="delete" value="Delete Duck">
+
+                        </form>
                     </div>
 
                 </section>
