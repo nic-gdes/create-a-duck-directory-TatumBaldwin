@@ -150,7 +150,7 @@
 
         <section class="duck-container3">
             <h2>Create a Duck</h2>
-            <form action="./create-duck.php" method="POST" enctype="multipart/form-data">
+            <form action="./profile.php" method="POST" enctype="multipart/form-data">
                 <div class="flex-col">
                     <label for="name">Name</label>
                     <?php 

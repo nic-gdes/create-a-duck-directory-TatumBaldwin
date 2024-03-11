@@ -27,8 +27,14 @@ if (isset($_GET['id'])) {
         $duck_is_live = true;
         
     }
+
 }
 
+// create delete button
+
+//conect the connection page
+
+require ('connection.php');
 
 
 //Check if POST request for delete
