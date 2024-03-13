@@ -16,7 +16,7 @@ if (isset($_POST['delete'])) {
     //state weather the delete was successful or not
     if(mysqli_query($conn, $delete_sql)) {
         echo "Duck Deleted Successfully";
-    }else {
+    } else {
         echo "Error deleting Duck: " . mysqli_error($conn);
     }
 }
